@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UZDevLib.iml" filepath="$PROJECT_DIR$/UZDevLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uzdevlib.iml" filepath="$PROJECT_DIR$/uzdevlib.iml" />
     </modules>
   </component>
 </project>

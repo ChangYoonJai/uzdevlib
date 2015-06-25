@@ -1,6 +1,5 @@
 apply plugin: 'android-library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.ChangYoonJai'
 
 android {
     compileSdkVersion 22
@@ -17,4 +16,11 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+// build a jar with source files
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+artifacts {
+    archives sourcesJar
+}
